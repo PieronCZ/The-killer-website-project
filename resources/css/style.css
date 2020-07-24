@@ -185,6 +185,7 @@ header {
     url(img/hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -339,4 +340,45 @@ header {
 .section-cities img {
   width: 250px;
   padding-right: 10px;
+}
+
+/*--------------------------*/
+/* CUSTOMERS */
+/*--------------------------*/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #c5c5c5;
+}
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height:145%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+
+cite {
+  margin-top: 25px;
+  font-size: 90%;
+  display: block;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
