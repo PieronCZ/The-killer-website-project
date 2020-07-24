@@ -15,6 +15,16 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* class for clearing floats */
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /*--------------------------*/
 /* REUSABLE COMPONENTS */
 /*--------------------------*/
@@ -231,4 +241,54 @@ header {
   cursor: pointer;
   transform: scale(1.03);
   opacity: 1;
+}
+
+/*--------------------------*/
+/* HOW IT WORKS */
+/*--------------------------*/
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 60px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 75px;
+}
+
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding: 12px;
+  float: left;
+  font-size: 150%;
+  margin-right: 30px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
 }
