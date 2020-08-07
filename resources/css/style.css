@@ -16,9 +16,11 @@ html {
 }
 
 /* class for clearing floats */
-.clearfix {zoom: 1}
+.clearfix {
+  zoom: 1;
+}
 .clearfix:after {
-  content: '.';
+  content: ".";
   clear: both;
   display: block;
   height: 0;
@@ -131,7 +133,8 @@ a:active {
 
 /*----- BUTTONS -----*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 20px;
   margin: auto;
@@ -143,7 +146,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #e67e22;
   color: #fff;
   margin-right: 15px;
@@ -155,12 +159,15 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
   border: 1px solid #cf6d17;
 }
 
@@ -328,11 +335,12 @@ header {
 /*--------------------------*/
 /* CITIES */
 /*--------------------------*/
-.section-cities h3{
+.section-cities h3 {
   margin-top: 30px;
 }
 
-.section-cities p,a {
+.section-cities p,
+a {
   text-align: left;
   line-height: 30px;
 }
@@ -355,7 +363,7 @@ header {
 blockquote {
   padding: 2%;
   font-style: italic;
-  line-height:145%;
+  line-height: 145%;
   margin-bottom: 20px;
   position: relative;
   margin-top: 50px;
@@ -442,4 +450,39 @@ cite img {
 .plan-box .btn:hover,
 .plan-box .btn:active {
   color: #fff;
+}
+
+/*--------------------------*/
+/* CONTACT FORM */
+/*--------------------------*/
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+textarea {
+  height: 100px;
+}
+
+*:focus {
+  outline: none;
 }
