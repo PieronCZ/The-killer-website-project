@@ -486,3 +486,81 @@ textarea {
 *:focus {
   outline: none;
 }
+
+/*--------------------------*/
+/* FOOTER */
+/*--------------------------*/
+
+footer {
+  background-color: rgb(32, 32, 32);
+  padding: 30px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav:last-child,
+.social-links:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  color: #888;
+  text-decoration: none;
+  border: 0;
+  transition: color 0.3s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 180%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  transition: color 0.3s;
+}
+
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
+.ion-social-twitter:hover {
+  color: #00aced;
+}
+.ion-social-googleplus:hover {
+  color: #dd4b39;
+}
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 80%;
+  margin-top: 30px;
+}
